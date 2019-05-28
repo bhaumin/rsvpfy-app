@@ -1,0 +1,27 @@
+{
+  "name": "jcnc-app",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Bhaumin Shah",
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:8080"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "qrcode.react": "^0.8.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-fontawesome": "^1.6.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
