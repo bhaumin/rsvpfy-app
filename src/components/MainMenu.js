@@ -3,7 +3,7 @@ import React from "react";
 const MainMenu = props => {
   return (
     <div className="container">
-      <h2>JCNC App</h2>
+      <h2>RSVPfy</h2>
       <hr />
       <div className="row justify-content-center">
         <div className="col-8">

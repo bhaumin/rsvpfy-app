@@ -15,18 +15,14 @@ class Rsvp extends React.Component {
   }
 
   componentDidMount() {
-    axios
-      .get("/api/rsvp/events")
-      .then(res => {
-        this.setState({
-          allEvents: res.data,
-          isSignedIn: true,
-          email: "bhaumin.12@gmail.com"
-        });
-      })
-      .catch(err => {
-        console.log(err);
+    axios.get("/api/rsvp/events")
+    .then(res => {
+      this.setState({
+        allEvents: res.data
       });
+    }).catch(err => {
+      console.log(err.stack);
+    });
   }
 
   static initialState = () => ({
@@ -126,7 +122,7 @@ class Rsvp extends React.Component {
 
     return (
       <div className="container">
-        <h2>RSVP App</h2>
+        <h2>RSVPfy</h2>
         <hr />
         {!isSignedIn ? (
           <SignInForm
